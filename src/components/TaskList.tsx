@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import '../styles/tasklist.scss'
 
@@ -45,10 +45,6 @@ export function TaskList() {
 
     setTasks(updatedTasks);
   }
-
-  useEffect(() => {
-
-  }, [newTaskTitle]);
 
   return (
     <section className="task-list container">
